@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/bitbug_favicon.ico">
+    <link rel="stylesheet" href="./bin/bootstrap.min.css">
+    <link rel="stylesheet" href="./bin/layer/2.4/skin/layer.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/cost.css">
+    <title>武汉草根商学院</title>
+</head>
+
+<body>
+    <div class="cost-head">
+        <img src="./img/manager/logo1.png">
+        <a href="admin.html">返回首页</a>
+    </div>
+    <div class="cost-box">
+        <div class="cost-user">
+            <ul>
+                <li class="user-li">
+                    <h1>用户信息</h1>
+                </li>
+                <li class="user-li">
+                    <img src="./img/manager/cy.png" alt="">
+                    <h2>当前账号</h2>
+                    <p>
+                        <span class="accountName"></span>
+                        <img src="./img/manager/hy.png" alt="" title="您是尊贵的VIP">
+                    </p>
+                </li>
+                <!-- <li class="user-li">
+                    <img src="./img/manager/jdjh.png" alt="">
+                    <h2>已购套餐</h2>
+                    <p>一条龙</p>
+                </li> -->
+                <li class="user-li">
+                    <img src="./img/manager/tx.png" alt="">
+                    <h2>到期时间</h2>
+                    <p class="validTime"></p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cost-content">
+            <div id="web">
+                <div class="proType">
+                    <span class="protype-title">套餐类型：</span>
+                    <ul class="proList">
+                        <!-- <li class="proItem itemActive">
+                            <label class="proTime">一年</label>
+                            <span class="proPrice">
+                                <span>￥</span>
+                                <span class="Price">999</span>
+                            </span>
+                            <span class="proMonth">83/月</span>
+                            <em class="iconActive"></em>
+                        </li>
+                        <li class="proItem">
+                            <label class="proTime">6个月</label>
+                            <span class="proPrice">
+                                <span>￥</span>
+                                <span class="Price">666</span>
+                            </span>
+                            <span class="proMonth">111/月</span>
+                            <em class="iconActive"></em>
+                        </li>
+                        <li class="proItem">
+                            <label class="proTime">3个月</label>
+                            <span class="proPrice">
+                                <span>￥</span>
+                                <span class="Price">360</span>
+                            </span>
+                            <span class="proMonth">120/月</span>
+                            <em class="iconActive"></em>
+                        </li>
+                        <li class="proItem">
+                            <label class="proTime">1个月</label>
+                            <span class="proPrice">
+                                <span>￥</span>
+                                <span class="Price">128</span>
+                            </span>
+                            <em class="iconActive"></em>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="costType">
+                    <span class="costType-title">支付类型：</span>
+                    <ul class="costList">
+                        <li class="costItem">
+                            <label>
+                                <input type="radio" name="qianbao" value="1">
+                                <div class="qbicon">
+                                    <img src="./img/manager/zfb.png" alt="">
+                                    <span>支付宝</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="costItem">
+                            <label>
+                                <input type="radio" name="qianbao" value="0">
+                                <div class="qbicon">
+                                    <img src="./img/manager/wx.png" alt="">
+                                    <span>微信支付</span>
+                                </div>
+                            </label>
+
+                        </li>
+                        <li><span class="vxspan">*微信支付完成请手动关闭</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="costAmount">
+                    <span class="costAmount-title">支付金额：</span>
+                    <span class="Amount">
+                        <span class="AmountNum"></span>
+                        <span>元</span>
+                    </span>
+                </div>
+                <div class="costButton">
+                    <button class="btn btn-danger" id="pay">确认支付</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="payCode">
+
+        </div>
+    </div>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./bin/layer/2.4/layer.js"></script>
+    <script src="./js/cost.js"></script>
+</body>
+
+</html>

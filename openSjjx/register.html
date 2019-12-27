@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/bitbug_favicon.ico">
+    <link rel="stylesheet" href="./bin/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/iconfont2.css">
+    <link rel="stylesheet" href="./bin/layer/2.4/skin/layer.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>武汉草根商学院</title>
+</head>
+
+<body>
+    <div class="reg-box">
+        <h1>用户注册</h1>
+        <div class="reg-input">
+            <div class="inputBOx user_name">
+                <label for="user_name">用户名称：</label>
+                <i class="iconfont">&#xe7ae;</i>
+                <input type="text" placeholder="请输入用户名称" maxlength="16" class="myInput">
+                <span class="text-warning inputInfo">16位以下,中文或英文</span>
+                <span class="iconfont icon-close-circle inputPrompt"></span>
+                <strong class="iconfont text-success inputSuccess">&#xe77d;</strong>
+            </div>
+            <div class="inputBOx user_pwd">
+                <label for="user_pwd">用户密码：</label>
+                <i class="iconfont">&#xe7c9;</i>
+                <input type="password" placeholder="请输入密码" maxlength="16" class="myInput">
+                <span class="text-warning inputInfo">6~16位密码</span>
+                <span class="iconfont icon-close-circle text-danger inputPrompt"></span>
+                <strong class="iconfont text-success inputSuccess">&#xe77d;</strong>
+            </div>
+            <div class="inputBOx confirm_pwd">
+                <label for="confirm_pwd">确认密码：</label>
+                <i class="iconfont">&#xe7c9;</i>
+                <input type="password" placeholder="请输入一致的密码" maxlength="16" class="myInput">
+                <span class="text-warning inputInfo">输入一致的密码</span>
+                <span class="iconfont icon-close-circle text-danger inputPrompt"></span>
+                <strong class="iconfont text-success inputSuccess">&#xe77d;</strong>
+            </div>
+            <div class="inputBOx sex">
+                <label for="confirm_pwd">性&emsp;别&emsp;：</label>
+                <label><input type="radio" name="sex" value="1" id="sex">
+                    <b class="iconfont text-primary">&#xe7e2;</b>男
+                </label>
+                <label><input type="radio" name="sex" value="0" id="sex">
+                    <b class="iconfont text-pink">&#xe8f1;</b>女
+                </label>
+            </div>
+            <div class="inputBOx account">
+                <label for="account">账户名称：</label>
+                <i class="iconfont">&#xe77f;</i>
+                <input type="text" placeholder="请输入账户名称" maxlength="16" class="myInput">
+                <span class="text-warning inputInfo">16位以下,中文或英文</span>
+                <span class="iconfont icon-close-circle text-danger inputPrompt"></span>
+                <strong class="iconfont text-success inputSuccess">&#xe77d;</strong>
+            </div>
+            <!-- <div class="inputBOx idcard">
+                <label for="idcard">身份证号：</label>
+                <i class="iconfont">&#xe7de;</i>
+                <input type="text" placeholder="请输入身份证号" maxlength="18" class="myInput">
+                <span class="text-warning inputInfo">输入正确的身份证号</span>
+                <span class="iconfont icon-close-circle text-danger inputPrompt"></span>
+                <strong class="iconfont text-success inputSuccess">&#xe77d;</strong>
+            </div> -->
+            <div class="inputBOx phone">
+                <label for="phone">手机号码：</label>
+                <i class="iconfont">&#xe7b2;</i>
+                <input type="text" placeholder="请输入手机号" maxlength="11" class="myInput">
+                <span class="text-warning inputInfo">输入正确的手机号</span>
+                <span class="iconfont icon-close-circle text-danger inputPrompt"></span>
+                <strong class="iconfont text-success inputSuccess">&#xe77d;</strong>
+            </div>
+        </div>
+        <div class="regButton">
+            <button type="button" id="submitReg" class="btn btn-primary btn-lg">注册</button>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./bin/layer/2.4/layer.js"></script>
+    <!-- <script src="./js/common.js"></script> -->
+    <script src="./js/register.js"></script>
+</body>
+
+</html>

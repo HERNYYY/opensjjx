@@ -1,0 +1,247 @@
+
+body{
+    padding-top: 15px;
+}
+.cost-head{
+    width: 1060px;
+    height: 70px;
+    margin: 0 auto;
+}
+.cost-head a{
+    float: right;
+    margin-top: 30px;
+}
+.cost-box{
+    position: relative;
+    width: 1060px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid rgb(217,217,217)
+}
+.cost-user{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 20%;
+    height: 420px;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    border-color: #e5e5e5;
+    padding:25px 10px 10px;
+}
+.cost-user ul li{
+    text-align: center;
+}
+.cost-user ul li h1{
+    font-size: 22px;
+    font-weight: 700;
+}
+.user-li{
+    margin-bottom: 60px;
+}
+.user-li h2{
+    font-weight: 700;
+    margin: 10px 0;
+}
+.user-li p{
+    color: #555;
+}
+.user-li>p>img{
+    margin-left: 2px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.cost-title li{
+    float: left;
+    width: 50%;
+    height: 70px;
+    background: #f5f5f5;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 18px;
+    cursor: pointer;
+}
+.cost-title li:hover{
+    background: #e5e5e5;
+}
+.cost-title li:first-child{
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: rgb(217,217,217);
+}
+.cost-title li:nth-child(2){
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    border-color: rgb(217,217,217);
+}
+.cost-title li.title-active{
+    background: #fff;
+    border: none;
+    font-weight: 700;
+    cursor: inherit ;
+}
+.cost-content{
+    padding: 30px 20px;
+}
+/* .cost-content::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 70px;
+} */
+.web-box li label{
+    margin-right: 10px;
+}
+#web{
+    width: 77%;
+}
+.proType,
+.costType,
+.costAmount{
+    position: relative;
+}
+.protype-title{
+    position: absolute;
+    top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color:#333;
+}
+.proList{
+    margin:15px 10px 15px 90px;
+}
+.proList:after,
+.costList:after{
+    content: '.';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+}
+.proList .proItem{
+    position: relative;
+    width: 200px;
+    height: 63px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    float: left;
+    margin:10px 0 0 20px;
+    cursor: pointer;
+}
+.proTime{
+    height: 61px;
+    width: 56px;
+    background: #ededed;
+    color: #707070;
+    line-height: 61px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.proPrice{
+    margin-left: 17px;
+    line-height: 66px;
+}
+.proPrice span:first-child{
+    font-size: 13px;
+    color: #F5622E;
+}
+.proPrice span:nth-child(2){
+    font-size: 24px;
+    color: #F5622E;
+    margin-left: -6px;
+}
+.proMonth{
+    font-size: 12px;
+    color: #999;
+}
+.proItem.itemActive{
+    background: url(../img/manager/zfbg.jpg) no-repeat;
+    border-width: 2px; 
+    border-color: #ea4b4b;
+    /* box-shadow:10px 10px 5px #FCEE21; */
+}
+.proItem.itemActive .proTime{
+    background: none;
+}
+.proItem.itemActive .iconActive{
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 25px;
+    height: 25px;
+    background: url(../img/manager/gou.png) no-repeat center center transparent;
+    background-size: 100% 100%;
+}
+.costItem{
+    position: relative;
+    width: 180px;
+    height: 58px;
+    border: 1px solid #d6d6d6;
+    margin: 10px 0 0 20px;
+    float: left;
+}
+.costType-title{
+    position: absolute;
+    top: 27px;
+    font-size: 15px;
+    font-weight: 600;
+    color:#333;
+}
+.costItem label{
+    width: 100%;
+    height: 100%;
+    margin-top: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.costItem label input{
+    margin-left: 20px;
+}
+.costList{
+    margin: 30px 0 40px 90px;
+}
+.qbicon{
+    position: absolute;
+    top: 32%;
+    left: 32%;
+}
+/* .qbicon span{
+    font-size: 16px;
+    font-weight: 500;
+} */
+.costAmount-title{
+    position: absolute;
+    top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color:#333;
+}
+.Amount{
+    margin-left:110px; 
+    margin-top: 10px;
+}
+.Amount span:first-child{
+    font-size: 32px;
+    color: #ea4b4b;
+}
+.costButton{
+    margin-left: 110px;
+    margin-top: 15px;
+}
+#payCode{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    width: 210px;
+    height: 210px;
+}
+.vxspan{
+    position: absolute;
+    top:50px;
+    color:red;
+    font-size: 12px;
+}

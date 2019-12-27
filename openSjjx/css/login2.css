@@ -1,0 +1,82 @@
+body{
+    background: url(../img/login/loginBg.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 200px;
+}
+.login-box{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 450px;
+    height: 330px;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    padding: 20px 20px;
+}
+.login-box h1{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.inputBox{
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.inputBox input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px 0 35px;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(0,0,0,0);
+    border: 1.3px #fff solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #95e0f7;
+    /* outline: none; */
+}
+.inputBox i{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+input::-webkit-input-placeholder{
+    color: #ddd;
+    font-size: 14px;
+}
+input::-moz-input-placeholder{
+    color: #ddd;
+    font-size: 14px;
+}
+input::-ms-input-placeholder{
+    color: #ddd;
+    font-size: 14px;
+}
+.jz_upwd{
+    width: 300px;
+    margin: 0 auto;
+}
+.jz_upwd label{
+    color: #fff;
+    font-size: 15px;
+}
+.jz_upwd a{
+    float: right;
+    text-decoration: underline;
+}
+.login-btn{
+    margin-top: 30px;
+    text-align: center;
+}
+.login-btn button{
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+}

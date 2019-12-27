@@ -1,0 +1,94 @@
+body{
+    background: url(../img/login/loginBg.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 200px;
+}
+
+.reg-box{
+    max-width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    background: rgba(0,0,0,.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+.reg-box h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(255,255,255,.9);
+    text-align: center;
+    padding-top: 20px; 
+}
+.reg-input{
+    /* max-width: 550px; */
+    height: 450px;
+    margin-left: 170px;
+    margin-right: 100px;
+    padding-top: 35px;
+}
+.reg-input label{
+    color: rgba(255,255,255,.9);
+    font-size: 16px;
+}
+.reg-input .inputBOx .myInput{
+    width: 385px;
+    height: 35px;
+    padding: 0 10px 0 35px;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(0,0,0,0);
+    border: 1px #cacaca solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #95e0f7;
+    outline: none;
+}
+.inputBOx{
+    position: relative;
+    margin-bottom: 20px;
+}
+.reg-input .inputBOx i{
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 0px;
+    left: 90px;
+    line-height: 35px;
+}
+.reg-input .inputBOx span,
+.reg-input .inputBOx strong{
+    display: none;
+}
+input::-webkit-input-placeholder{
+    color: #ddd;
+    font-size: 16px;
+}
+input::-moz-input-placeholder{
+    color: #ddd;
+    font-size: 16px;
+}
+input::-ms-input-placeholder{
+    color: #ddd;
+    font-size: 16px;
+}
+.text-pink{
+    color: pink;
+}
+.sex label{
+    margin-right: 15px;
+}
+.regButton{
+    text-align: center;
+}
+.regButton button{
+    padding-left:50px !important;
+    padding-right:50px !important;
+}
+.inputInfo{
+    color: #ffed58;
+    font-weight: 700;
+}
+.inputPrompt{
+    color: #d43f3a;
+    font-weight: 700;
+}

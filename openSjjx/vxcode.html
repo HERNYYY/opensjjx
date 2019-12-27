@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>...</title>
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<style>
+    body {
+        background: #31af28;
+        padding-top: 50px;
+    }
+
+    .vxBox {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 35px;
+    }
+
+    #mycode img {
+        margin-left: 28%;
+        padding: 10px;
+        background: #fff;
+        border-radius: 3px;
+    }
+
+    .vx-b {
+        position: relative;
+        width: 100%;
+        /* height: 50px; */
+        background: #fff;
+        margin-top: 110px;
+        padding: 10px 0;
+        text-align: left;
+    }
+
+    .vx-b img {
+        margin-left: 90px;
+    }
+
+    .vx-b span {
+        position: absolute;
+        top: 13px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <div class="vxBox">
+        <h2>请使用微信支付</h2>
+        <div id="mycode"></div>
+        <div class="vx-b">
+            <img src="./img/manager/sys.png">
+            <span>在微信中打开扫一扫</span>
+        </div>
+    </div>
+
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./bin/qrcode.min.js"></script>
+<script>
+    var vxcode = window.localStorage.getItem('vxcode');
+    // new QRCode(document.getElementById("mycode"), vxcode);
+    var qrcode = new QRCode('mycode', {
+        text: vxcode,
+        width: 156,
+        height: 156,
+
+    })
+    // qrcode.makeCode();
+</script>
+
+</html>

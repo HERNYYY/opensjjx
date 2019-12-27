@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 700px;
+        /* height: 200px; */
+        margin: 30px auto;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 50px;
+    }
+
+    img {
+        vertical-align: middle
+    }
+
+    span {
+        font-size: 24px;
+        font-weight: 700
+    }
+</style>
+
+<body>
+    <div class="box">
+        <img src="./img/manager/paycg.png">
+        <span>支付成功！！！</span>
+        <h3>请返回客户端</h3>
+    </div>
+
+</body>
+<script>
+    if (window.localStorage.getItem("authorization")) {
+        window.onload = function () {
+            window.location.href = "admin.html"
+        }
+    }
+
+</script>
+
+</html>
